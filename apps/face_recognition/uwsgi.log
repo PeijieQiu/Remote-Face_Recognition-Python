@@ -1,0 +1,43 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Wed May 22 13:36:25 2019] ***
+compiled with version: 7.3.0 on 26 February 2019 11:50:52
+os: Linux-4.4.0-141-generic #167-Ubuntu SMP Wed Dec 5 10:40:15 UTC 2018
+nodename: instance-e3w7jt43
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/apps/face_recognition
+writing pidfile to uwsgi.pid
+detected binary path: /anaconda3/yes/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/apps/face_recognition
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.0.4:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.1 | packaged by conda-forge | (default, Feb 26 2019, 04:48:14)  [GCC 7.3.0]
+Python main interpreter initialized at 0x55af4ec06ec0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added /root/apps/face_recognition/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55af4ec06ec0 pid: 4698 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4698)
+spawned uWSGI worker 1 (pid: 4699, cores: 2)
+spawned uWSGI worker 2 (pid: 4700, cores: 2)
+spawned uWSGI worker 3 (pid: 4701, cores: 2)
+spawned uWSGI worker 4 (pid: 4702, cores: 2)
+test.jpg
+[pid: 4699|app: 0|req: 1/1] 118.124.228.13 () {38 vars in 654 bytes} [Wed May 22 05:36:49 2019] POST /face_recognition/image_upload_handler/ => generated 17 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 108 bytes (1 switches on core 0)
